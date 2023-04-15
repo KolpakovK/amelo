@@ -1,0 +1,370 @@
+/* amelo design */
+
+@media (min-width: 990px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 0.9em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 3.0rem;
+        padding-left: 1.5rem;
+        padding-top: 0.9em;
+    }
+}
+
+@media (max-width: 990px) {
+    h1.home-banner {
+        font-size: 36px !important;
+    }
+
+    h2 { font-size: 1.5em; }
+
+    button { font-size: 0.9em; }
+
+    .home-ctm-banner {
+        padding: 30px;
+        font-size: 0.7em;
+    }
+
+    .home-ctm-banner a { font-size: 1.1em !important; }
+
+    button.amelo-gradient {  padding: 12px 25px !important; }
+    button.amelo-gradient-nofill {  padding: 10px 25px !important; }
+}
+
+
+body {
+    color: #062743;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1440px;
+}
+
+.hidden { display: none; }
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+h6 {
+    font-size: 1em;
+    background: linear-gradient(61.94deg, #B950F0 32.56%, #20B0E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+body.amelo-font {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+}
+
+h6.certified-partners {
+    letter-spacing: 1px;
+}
+
+h1.home-banner {
+    max-width: 588px;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: bold;
+    margin-top: 155px;
+    color: #062743;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* buttons */
+
+button.amelo-gradient a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button.amelo-gradient {
+    background: linear-gradient(61.94deg, #B950F0 32.56%, #20B0E2 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 13px 32px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button.amelo-gradient-whitefill a {
+    color: #062743;
+    text-decoration: none;
+}
+
+button.amelo-gradient-whitefill {
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px 32px;
+    border: none;
+    color: #062743;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-height: 48px;
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.10);
+}
+
+button.amelo-gradient-nav {
+    height: 48px;
+}
+
+button.amelo-gradient-nofill {
+    padding: 10px 32px;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    border: 2px solid #B950F0;
+    border-radius: 10px;
+    background: linear-gradient(61.94deg, #B950F0 32.56%, #20B0E2 100%);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    color: #007bff;
+}
+
+button.amelo-gradient-nofill a { color: #B950F0 !important; text-decoration: none; font-size: 1em; }
+
+button.amelo-gradient-nofill:hover, .amelo-gradient-whitefill:hover {
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.05);
+}
+
+button:focus {outline:0;}
+
+.mw-360 { max-width: 360px; }
+.mw-550 { max-width: 550px; }
+.mw-600 { max-width: 600px; }
+.mw-720 { max-width: 720px; }
+.mw-1120 { max-width: 1120px; width: 1120px; }
+
+/* nav */
+
+.nav {
+    height: 48px;
+    margin-top: 44px;
+}
+
+.nav img.logo { width: 168px; height: 48px;}
+
+.navbar a {
+    color: #062743;
+    font-size: 1.1em;
+}
+
+/* home */
+
+.amelo-banner-bg {
+    background: rgb(185,80,240);
+    background: linear-gradient(257deg, rgba(32,176,226,0.04) 0%, rgba(185,80,240,0.04) 35%);
+    box-sizing: border-box;
+}
+
+.amelo-banner-bg p {
+}
+
+/* cards */
+
+.amelo-card {
+    min-height: 250px;
+    margin-bottom: 30px;
+    background: #FAFAFC;
+    border-radius: 10px;
+    border: 0;
+}
+
+.amelo-card img {
+    border: 0;
+    margin: auto;
+    background: none;
+}
+
+.amelo-card .card-title {
+    font-weight: bold;
+}
+
+.btn-amelo-card {
+    position: absolute;
+    left: 41%;
+    top: 87%;
+    background: url("../assets/button-right.png");
+    border: 0;
+    width: 70px;
+    height: 65px;
+}
+
+.btn-amelo-card:hover {
+    background: url("../assets/button-right.png");
+    border: 0;
+}
+
+.btn-amelo-card:active {
+    background: url("../assets/button-right.png");
+    border: 0;
+}
+
+.home-ctm-banner {
+    background-image: url("../assets/banner-arrows.png"), linear-gradient(215deg, rgba(32,176,226,1) 0%, rgba(185,80,240,1) 47%);
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.10);
+    min-height: 250px;
+    border-radius: 40px;
+}
+
+.home-ctm-banner p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: auto;
+}
+
+.amelo-card-work {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 372px;
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.05);
+}
+
+.amelo-card-work-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.amelo-card-work-tag {
+    border: 2px solid #B950F0;
+    border-radius: 10px;
+    color: #B950F0;
+    font-size: 0.7em;
+    padding: 8px 12px;
+}
+
+.testimonial-circle {
+    background: linear-gradient(257deg, rgba(32,176,226,0.04) 0%, rgba(185,80,240,0.04) 35%);
+    padding: 12px;
+    border-radius: 25px;
+    width: 53px;
+    height: 53px;
+    margin-right: 15px;
+}
+
+.quote-mark {
+    background: url("../assets/quote-mark-small.png") no-repeat #fff;
+    background-position: 22px 22px;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+@media (min-width: 768px) {
+    div.contact-form {
+        padding-left: 150px;
+        background: url("../assets/contact-bg.jpg") no-repeat right top;
+    }
+
+}
+
+div.contact-form {
+    background: url("../assets/contact-bg.jpg") no-repeat left top;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+fieldset.contact-form {
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.05);
+    background: #fff;
+    max-width: 480px;
+    font-size: 0.9em;
+}
+
+fieldset.contact-form input, fieldset.contact-form textarea {
+    background: #F2F2F9;
+    border-radius: 10px;
+    font-size: 0.9em;
+    border: 0;
+    padding: 8px 10px;
+    float: left;
+    clear: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+fieldset.contact-form input:focus, fieldset.contact-form textarea:focus {
+    outline: none;
+}
+
+fieldset.contact-form label, fieldset.contact-form button {
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+}
+
+fieldset.contact-form label:hover {
+    cursor: pointer;
+}
+
+fieldset.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(215deg, rgba(32,176,226,1) 0%, rgba(185,80,240,1) 47%);
+    border: 0;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+fieldset.contact-form checkbox {
+    padding: 5px;
+}
+
+fieldset.contact-form button:hover, .amelo-gradient:hover {
+    background: linear-gradient(215deg, rgba(32,176,226,1) 0%, rgba(185,80,240,1) 85%);
+    box-shadow: 0 0 17px 6px rgba(0,0,0,0.05);
+}
+
+div.footer-bar {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background: #FAFAFC;
+    font-size: 0.8em;
+}
+
+div.footer-bar .copyright {
+    color: #B950F0;
+}
+
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+

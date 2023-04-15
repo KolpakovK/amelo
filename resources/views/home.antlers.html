@@ -1,0 +1,114 @@
+{{ partial:parts/nav }}
+
+{{ partial:parts/banner }}
+
+<div class="container-fluid amelo-banner-bg mb-5" style="padding-top: 90px; padding-bottom: 50px;">
+    
+    <div class="d-flex justify-content-center bd-highlight mb-3" id="about">
+        <h6 class="amelo-font">{{ about_us_subtitle }}</h6>
+    </div>
+    
+    <div class="d-flex justify-content-center bd-highlight mb-3 text-center">
+        <h2 class="mw-600">{{ about_us_title }}</h2>
+    </div>
+    
+    {{ about_us_content }}
+    <div class="d-flex justify-content-center bd-highlight mb-3 text-center">
+        <p class="mw-550">{{ content }}</p>
+    </div>
+    {{ /about_us_content }}
+    
+</div>
+
+<div class="container mb-5">
+    
+    <div class="d-flex justify-content-center bd-highlight mb-3" id="services">
+        <h6 class="amelo-font">Our Services</h6>
+    </div>
+    
+    <div class="d-flex justify-content-center bd-highlight mb-5 text-center">
+        <h2 class="mw-360">Get expert services for long-term growth.</h2>
+    </div>
+    
+    <div class="row">
+        {{ services_cards }}
+        <div class="col-sm-4 grow mb-5">
+            <div class="card amelo-card text-center">
+                <div class="card-body">
+                    <img class="card mb-4 mt-4" src="{{ image }}" alt="" title="">
+                    <h5 class="card-title">{{ title }}</h5>
+                    <a href="#contact" class="btn btn-primary btn-amelo-card" data-toggle="modal" data-target="{{ modal_id }}">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        {{ /services_cards }}
+    </div>
+    
+    <div class="d-flex justify-content-center pl-5 pr-5 pt-5">
+        
+        <div class="home-ctm-banner text-center h-100 mw-1120 pt-5 grow">
+            <p class="my-auto mw-720 pb-2">{{ cta_title }}</p>
+            <button class="amelo-gradient-whitefill mt-4"><a href="{{ cta_button_link }}">{{ cta_button_text }}</a></button>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container-fluid amelo-banner-bg mb-5" style="padding-top: 120px; padding-bottom: 120px;">
+    
+    <div class="d-flex justify-content-center bd-highlight mb-3" id="work">
+        <h6 class="amelo-font">{{ work_subtitle }}</h6>
+    </div>
+    
+    <div class="d-flex justify-content-center bd-highlight mb-5 text-center">
+        <h2 class="mw-550">{{ work_title }}</h2>
+    </div>
+    
+    <div class="container">
+        {{ case_number=0 }}
+        {{ work_cases }}
+        
+        {{ if (case_number==0) }}
+        <div class="d-flex flex-wrap bd-highlight justify-content-center mb-auto">
+            {{ /if }}
+            <div class="m-3 flex-fill amelo-card-work grow mb-auto bd-highlight text-center">
+                <img src="{{ logo }}" alt="{{ logo:alt }}" title="Buckhill Software" class="img-fluid p-3" style="max-height: 188px;">
+                <p class="p-3 pl-4 pr-4 amelo-card-work-title">{{ title }}</p>
+                
+                <div class="pl-4 pr-4 pb-3">
+                    {{ tags }}
+                    <p class="amelo-card-work-tag d-inline-flex">{{ title }}</p>
+                    {{ /tags }}
+                </div>
+            </div>
+            {{ if (case_number==2) }} 
+        </div>
+        {{ case_number=0 }}
+        {{ else }}
+        {{ case_number=case_number+1 }}
+        {{ /if }}
+        
+        {{ /work_cases }}
+    </div>
+</div>
+
+<div class="container-fluid mb-5" style="padding-top: 50px; padding-bottom: 70px;">
+    <div class="d-flex justify-content-center bd-highlight mb-3">
+        <h6 class="amelo-font">{{ clients_subtitle }}</h6>
+    </div>
+    
+    <div class="d-flex justify-content-center bd-highlight">
+        <div class="d-flex flex-wrap bd-highlight justify-content-center align-items-center">
+            {{ clients_logos}}
+            <div class="m-4 mb-2 flex-fill"><img src="{{ logo }}" alt="" title=""></div>
+            {{ /clients_logos}}
+        </div>
+    </div>
+</div>
+
+
+{{ partial:parts/contact }}
+
+{{ partial:parts/footer }}
+
+{{ partial:parts/modals }}

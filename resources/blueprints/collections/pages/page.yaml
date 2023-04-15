@@ -1,0 +1,509 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  banner:
+    display: Banner
+    fields:
+      -
+        handle: home_banner_title
+        field:
+          input_type: text
+          antlers: false
+          default: 'Grow your revenue and take your business to the next level.'
+          display: 'Home banner title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: banner_buttons
+        field:
+          collapse: false
+          previews: true
+          sets:
+            button:
+              display: Button
+              fields:
+                -
+                  handle: button_type
+                  field:
+                    options:
+                      amelo-gradient: Filled
+                      amelo-gradient-nofill: Outline
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: 'Button type'
+                    type: select
+                    icon: select
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: link
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Link
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Banner buttons'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: banner_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Banner image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  about_us:
+    display: 'About us'
+    fields:
+      -
+        handle: about_us_subtitle
+        field:
+          input_type: text
+          antlers: false
+          default: 'ABOUT US'
+          display: 'about us subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: about_us_title
+        field:
+          input_type: text
+          antlers: false
+          default: 'Grow your revenue and take your business to the next level'
+          display: 'about us title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: about_us_content
+        field:
+          collapse: false
+          previews: true
+          sets:
+            paragraph:
+              display: paragraph
+              fields:
+                -
+                  handle: content
+                  field:
+                    antlers: false
+                    display: content
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'about us content'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: about_us_block_id
+        field:
+          input_type: text
+          antlers: false
+          display: 'about us block id'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  services:
+    display: Services
+    fields:
+      -
+        handle: services_subtitle
+        field:
+          input_type: text
+          antlers: false
+          default: 'Our Services'
+          display: 'Services subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: services_title
+        field:
+          input_type: text
+          antlers: false
+          default: 'STRATEGIC MARKETING CONSULTANCY'
+          display: 'Services title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: services_modals
+        field:
+          collapse: false
+          previews: true
+          sets:
+            modal:
+              display: Modal
+              fields:
+                -
+                  handle: modal_id
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Modal id'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    antlers: false
+                    display: Content
+                    type: markdown
+                    icon: markdown
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Services modals'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: services_cards
+        field:
+          collapse: false
+          previews: true
+          sets:
+            card:
+              display: Card
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    max_files: 1
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: modal_id
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Modal id'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Services cards'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  cta_banner:
+    display: 'CTA banner'
+    fields:
+      -
+        handle: cta_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'CTA Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: cta_button_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'CTA button text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: cta_button_link
+        field:
+          display: 'CTA button link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  our_work:
+    display: 'Our work'
+    fields:
+      -
+        handle: work_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Work subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: work_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Work title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: work_cases
+        field:
+          collapse: false
+          previews: true
+          sets:
+            case:
+              display: Case
+              fields:
+                -
+                  handle: logo
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: Logo
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: tags
+                  field:
+                    collapse: false
+                    previews: true
+                    sets:
+                      tag:
+                        display: tag
+                        fields:
+                          -
+                            handle: title
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: Title
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                              visibility: visible
+                    display: Tags
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Work cases'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  clients:
+    display: Clients
+    fields:
+      -
+        handle: clients_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Clients subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: clients_logos
+        field:
+          collapse: false
+          previews: true
+          sets:
+            logo:
+              display: Logo
+              fields:
+                -
+                  handle: logo
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: Logo
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'Clients logos'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  contact_us:
+    display: 'Contact us'
+    fields:
+      -
+        handle: contact_us_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact us title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: contact_us_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact us subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible

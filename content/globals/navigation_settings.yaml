@@ -1,0 +1,51 @@
+title: 'Navigation settings'
+data:
+  pages_links:
+    -
+      id: lgiin9r6
+      title: Services
+      link_to_page: '#services'
+      type: page
+      enabled: true
+      is_anchor: true
+      parent_link: 'entry::home'
+    -
+      id: lgiio2h1
+      title: 'Our Work'
+      link_to_page: '#work'
+      type: page
+      enabled: true
+      is_anchor: true
+      parent_link: 'entry::home'
+    -
+      id: lgiiodog
+      title: 'About Us'
+      link_to_page: '#about'
+      type: page
+      enabled: true
+      is_anchor: true
+      parent_link: 'entry::home'
+    -
+      id: lgiiomwv
+      title: 'Contact Us'
+      link_to_page: '#contact'
+      type: page
+      enabled: true
+      is_anchor: true
+      parent_link: 'entry::home'
+    -
+      id: lgijlfjs
+      title: Blog
+      link_to_page: 'entry::e880cca5-3828-423d-96be-20c71cb74d37'
+      is_anchor: false
+      type: page
+      enabled: true
+    -
+      id: lgijln6x
+      title: Careers
+      link_to_page: 'entry::1e2890b4-2be2-498a-bdea-da4999bb473a'
+      is_anchor: false
+      type: page
+      enabled: true
+  button_text: 'FREE CONSULTATION'
+  button_link: 'entry::22ac091e-be5c-47d1-839f-77522493f646'

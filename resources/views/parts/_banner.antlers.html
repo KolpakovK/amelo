@@ -1,0 +1,16 @@
+<div class="container mb-5">   
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <h1 class="home-banner mb-5">{{ home_banner_title }}</h1>
+            
+            <div class="d-flex flex-row bd-highlight mb-3">
+                {{ banner_buttons }}
+                <div class="pr-2 bd-highlight"><button class="{{ button_type }} flex-wrap"><a href="{{ link }}">{{ title }}</a></button></div>
+                {{ /banner_buttons }}
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <img src="{{ banner_image }}" alt="Amelo" title="Amelo" class="mt-4 img-fluid">
+        </div>
+    </div>
+</div>

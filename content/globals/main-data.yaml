@@ -1,0 +1,24 @@
+title: main-data
+data:
+  company_name: 'Amelo Design'
+  social_media:
+    -
+      id: lghylcbx
+      logo: icon-fb.png
+      link: 'http://amelodesign.com/#'
+      type: social
+      enabled: true
+    -
+      id: lghylnbq
+      logo: icon-insta.png
+      link: 'http://amelodesign.com/#'
+      type: social
+      enabled: true
+    -
+      id: lghylyyy
+      logo: icon-twitter.png
+      link: 'http://amelodesign.com/#'
+      type: social
+      enabled: true
+  main_logo: amelo-logo-small.svg
+  copyright: 'Amelo 2021. All rights reserved.'

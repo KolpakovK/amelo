@@ -1,0 +1,61 @@
+<div class="container mb-5 contact-form">
+    
+    <div class="d-flex justify-content-left bd-highlight mb-1 text-center" id="contact">
+        <h2 class="mw-550">{{ contact_us_title }}</h2>
+    </div>
+    
+    <div class="d-flex justify-content-left bd-highlight mb-5">
+        <h6 class="amelo-font" style="text-transform: revert">{{ contact_us_subtitle }}</h6>
+    </div>
+    
+    <fieldset class="contact-form">
+        {{ form:contact_us}}
+        <div class="row pl-3 pr-3">
+            <label for="first_name">First name:</label>
+            <input type="text" name="first_name" id="first_name" required>
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="last_name">Last name:</label>
+            <input type="text" name="last_name" id="last_name" required>
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="company_name">Company name:</label>
+            <input type="text" name="company_name" id="company_name" value="" class=""> 
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="phone_number">Phone number:</label>
+            <input type="text" name="phone_number" id="phone_number" value="" class="">  
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="how_did_you_hear_about_us">How did you hear about us?</label>
+            <textarea name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" rows="4" class=""></textarea>
+        </div>
+        
+        <div class="row pl-3 pr-3">
+            <label for="your_message">Your message</label>
+            <textarea name="your_message" id="your_message" rows="4" class=""></textarea>
+        </div>
+        
+        <div class="pl-3 pr-3 mb-3 row">
+            <label for="marketing">Yes, I would like to receive marketing communications regarding Amelo products, services and events</label>
+            <input type="checkbox" name="subscribe[]" value="Subscribe is allowing" id="marketing" style="width: 15px;" class="text-left ">
+            <div class="clearfix"></div>
+        </div>
+        
+        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+        
+        <button type="submit" class="">Send</button>
+        
+        {{ /form:contact_us}}
+    </fieldset>
+    
+</div>

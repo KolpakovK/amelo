@@ -1,0 +1,15 @@
+title: Favicons
+data:
+  apple-icon-57x57: apple-icon-57x57.png
+  apple-icon-60x60: apple-icon-60x60.png
+  apple-icon-72x72: apple-icon-72x72.png
+  apple-icon-76x76: apple-icon-76x76.png
+  apple-icon-114x114: apple-icon-114x114.png
+  apple-icon-120x120: apple-icon-120x120.png
+  apple-icon-144x144: apple-icon-144x144.png
+  apple-icon-152x152: apple-icon-152x152.png
+  apple-icon-180x180: apple-icon-180x180.png
+  android-icon-192x192: android-icon-192x192.png
+  favicon-32x32: favicon-32x32.png
+  favicon-96x96: favicon-96x96.png
+  favicon-16x16: favicon-16x16.png

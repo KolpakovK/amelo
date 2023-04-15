@@ -1,0 +1,65 @@
+title: Contact
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: template
+        field:
+          hide_partials: true
+          blueprint: false
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  contact_us:
+    display: 'Contact us'
+    fields:
+      -
+        handle: contact_us_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact us title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: contact_us_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact us subtitle'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible

@@ -1,0 +1,42 @@
+<div class="container-fluid mb-5">
+    <footer class="page-footer container pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <img src="{{ main-data:main_logo }}" alt="Amelo" title="Amelo" class="logo" style="width:140px; height: 40px;">
+                </div>
+                
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="">Links</h5>
+                    
+                    <ul class="list-unstyled">
+                        {{ navigation_settings:pages_links }}
+                        <li>
+                            <a href="{{ link_to_page }}">{{ title }}</a>
+                        </li>
+                        {{ /navigation_settings:pages_links }}
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="">Social Media</h5>
+                    
+                    <ul class="list-unstyled">
+                        <li>
+                            {{ main-data:social_media }}
+                            <a href="{{ link }}"><img src="{{ logo }}" alt="Facebook" title="Facebook" class="pr-2"></a>
+                            {{ /main-data:social_media }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="container-fluid footer-bar">
+    <div class="container text-center">
+        <p><span class="copyright">&copy;</span> {{ main-data:copyright }}</p>
+    </div>
+</div>
